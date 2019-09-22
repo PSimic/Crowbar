@@ -1,0 +1,47 @@
+﻿<Window x:Class="Crowbar.Sign"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crowbar"
+        mc:Ignorable="d"
+        Title="Potpisivanje zapisnika o obeležavanju" Height="400" Width="500" ResizeMode="NoResize" Background="LightGray" >
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Name="ImportExcel" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
+            <Image Source="D:\Code\01_UI_icon_set\Applications\Adobe Acrobat Reader.png" />
+        </Button>
+        <Button Grid.Column="0" Grid.Row="1" Name="Folder" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
+            <Image Source="D:\Code\01_UI_icon_set\Folders and OS\Contacts Folder.png" />
+        </Button>
+        <Button Grid.Column="0" Grid.Row="2" Name="SheetName" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
+            <Image Source="D:\Code\01_UI_icon_set\Folders and OS\Blank Folder.png" />
+        </Button>
+        <Button Grid.Column="0" Grid.Row="3" Name="Start" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
+            <Image Source="D:\Code\01_UI_icon_set\Applications\Notepad.png" />
+        </Button>
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
+            Učitaj zapisnike o obeležavanju
+        </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
+            Ucitaj potpis
+        </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
+            Selektuj folder
+        </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
+            Pokreni program
+        </TextBlock>
+        <ListBox Grid.Column="2" Grid.RowSpan="4"/>
+    </Grid>
+</Window>
