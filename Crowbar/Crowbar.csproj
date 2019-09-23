@@ -61,6 +61,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -144,28 +145,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Excel alt 2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Live Sync.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Calculator.png" />
-    <Resource Include="Images\Notepad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Blank Folder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Adobe Acrobat Reader.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Contacts Folder.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="pajser.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +158,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Adobe Acrobat Reader.png" />
+    <Resource Include="Images\Blank Folder.png" />
+    <Resource Include="Images\Calculator.png" />
+    <Resource Include="Images\Contacts Folder.png" />
+    <Resource Include="Images\Excel alt 2.png" />
+    <Resource Include="Images\Live Sync.png" />
+    <Resource Include="Images\Notepad.png" />
+    <Resource Include="Images\Search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
