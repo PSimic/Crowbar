@@ -17,10 +17,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="0" Grid.Row="0" Name="ImportExcel" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
+        <Button Grid.Column="0" Grid.Row="0" Name="ImportExcel" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" Click="ImportExcel_Click" >
             <Image Source="E:\06_Code\Crowbar\Crowbar\Images\Excel alt 2.png" />
         </Button>
-        <Button Grid.Column="0" Grid.Row="1" Name="SheetName" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue">
+        <Button Grid.Column="0" Grid.Row="1" Name="Start" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" Click="Start_Click">
             <Image Source="E:\06_Code\Crowbar\Crowbar\Images\Calculator.png" />
         </Button>
         <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
@@ -29,7 +29,7 @@
         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
             Pokreni program
         </TextBlock>
-        <ListBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <ListBox Name ="listBox" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
