@@ -18,19 +18,19 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="0" Grid.Row="0" Name="ImportExcel" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
-            <Image Source="D:\Code\01_UI_icon_set\Applications\Adobe Acrobat Reader.png" />
+        <Button Grid.Column="0" Grid.Row="0" Name="ImportPDF" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" Click="ImportPDF_Click">
+            <Image Source="E:\06_Code\Crowbar\Crowbar\Images\Adobe Acrobat Reader.png" />
         </Button>
-        <Button Grid.Column="0" Grid.Row="1" Name="Folder" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
-            <Image Source="D:\Code\01_UI_icon_set\Folders and OS\Contacts Folder.png" />
+        <Button Grid.Column="0" Grid.Row="1" Name="ImportSign" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" Click="ImportSign_Click">
+            <Image Source="E:\06_Code\Crowbar\Crowbar\Images\Contacts Folder.png" />
         </Button>
-        <Button Grid.Column="0" Grid.Row="2" Name="SheetName" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
-            <Image Source="D:\Code\01_UI_icon_set\Folders and OS\Blank Folder.png" />
+        <Button Grid.Column="0" Grid.Row="2" Name="Folder" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" Click="Folder_Click">
+            <Image Source="E:\06_Code\Crowbar\Crowbar\Images\Blank Folder.png" />
         </Button>
-        <Button Grid.Column="0" Grid.Row="3" Name="Start" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" >
-            <Image Source="D:\Code\01_UI_icon_set\Applications\Notepad.png" />
+        <Button Grid.Column="0" Grid.Row="3" Name="Start" Width="75" Height="75" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"  Cursor="Hand" BorderThickness="3" BorderBrush="AliceBlue" Click="Start_Click">
+            <Image Source="E:\06_Code\Crowbar\Crowbar\Images\Notepad.png" />
         </Button>
-        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" TextWrapping="Wrap"> 
             Učitaj zapisnike o obeležavanju
         </TextBlock>
         <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
@@ -42,6 +42,6 @@
         <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"> 
             Pokreni program
         </TextBlock>
-        <ListBox Grid.Column="2" Grid.RowSpan="4"/>
+        <ListBox Name="listBox" Grid.Column="2" Grid.RowSpan="4"/>
     </Grid>
 </Window>
