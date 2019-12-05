@@ -10,7 +10,7 @@ namespace Crowbar
 {
     public class Tools
     {
-        public static void SignPDF(List<string> filesPaths, string exportFolder, string signatureLocation, out string errors)
+        public static void SignPDF(List<string> filesPaths, string exportFolder, string signatureLocation, string upDown, string leftRight, out string errors)
         {
             if (filesPaths.Count == 0)
                 throw new Exception("Nisu uneti PDF fajlovi.");
@@ -41,7 +41,7 @@ namespace Crowbar
                         image.ScaleAbsoluteHeight(65);
                         image.ScaleAbsoluteWidth(155);
 
-                        image.SetAbsolutePosition(80, 80);
+                        image.SetAbsolutePosition(int.Parse(leftRight), int.Parse(upDown));
                         pdfContentByte.AddImage(image);
                         stamper.Close();
                     }

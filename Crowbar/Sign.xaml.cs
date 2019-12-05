@@ -47,7 +47,7 @@ namespace Crowbar
             try
             {
                 string errors = string.Empty;
-                Tools.SignPDF(listOfFilesPath, folderLocation, signatureLocatoin, out errors);
+                Tools.SignPDF(listOfFilesPath, folderLocation, signatureLocatoin, goreDole.Text, levoDesno.Text, out errors);
 
                 if (!errors.Equals(string.Empty))
                     listBox.Items.Add(errors);
